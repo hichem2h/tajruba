@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: #efedf2;
+    font-family: 'Dubai Regular';
+    direction: rtl;
+    padding-bottom: 100px;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+a:link {
+    text-decoration: none;
+}
+[class^="icon-"] {
+    font-size: 18px;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 1px 2px #ccc;
+}
+
+header a {
+    font-family: 'Dubai Bold';
+    color: #1f1f33;
+    font-size: 18px;
+}
+
+main {
+    width: 100%;
+}
+
+main nav {
+    margin-top: 3px;
+    height: 55px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+
+main nav a {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    line-height: 55px;
+    color: #726c80;
+    font-size: 14px;
+}
+
+main nav a span {
+    margin-left: 5px;
+    position: relative;
+    top: 3px;
+}
+
+.is-active-nav {
+    border-bottom: 4px solid #9164fa;
+    color: #9164fa;
+}
+
+main #posts {
+    width: 100%;
+}
+
+main #posts article {
+    margin-top: 20px;
+    width: 100%;
+    padding: 0 10px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0 1px 2px #ccc;
+}
+
+.post-right {
+    width: 80%;
+}
+
+.post-right h2 {
+    font-family: 'Dubai Bold';
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.post-right .author {
+    font-family: 'Dubai Bold';
+    font-size: 13px;
+    color: #9164fa;
+    margin-top: 10px;
+}
+
+.post-right .author img {
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
+.post-right .body {
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 18px;
+}
+
+.post-left {
+    width: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+    margin-top: 15px;
+    color: #726c8066;
+}
+
+.post-left .likes-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid #726c8066;
+    border-radius: 20px; 
+    height: 85px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.is-active-likes {
+    color: #9164fa;
+}
+
+.post-image {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.post-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.comments-buttons {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #726c80aa;
+    border-radius: 20px; 
+    color: #726c80aa;
+    text-align: center;
+    line-height: 40px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.comments-buttons a {
+    direction: ltr;
+    width: 100%;
+    height: 100%;
+}
+
+.comments-buttons a span {
+    margin-left: 5px;
+    position: relative;
+    top: 3px;
+}
+
+.comments-buttons .sep {
+    height: 100%;
+    border-left: 1px solid #726c80aa;
+}
+
+.best-comment {
+    width: 100%;
+    margin-top: 5px;
+    padding: 0 10px;
+    background-color: white;
+}
+
+.best-comment .author {
+    font-family: 'Dubai Bold';
+    font-size: 13px;
+    color: #9164fa;
+    padding-top: 10px;
+}
+
+.best-comment .author img {
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
+.best-comment .body {
+    font-size: 14px;
+    padding: 5px 30px 10px 0;
+    line-height: 18px;
+}
+
+footer {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    text-align: center;
+}
+
+footer nav a {
+    height: 100%;
+    width: 20%;
+    color: #726c8066;
+    font-size: 30px !important;
+    line-height: 60px !important;
+}
+
+.icon-notifications {
+    font-size: 30px !important;
+    line-height: 60px !important;
+}
+
+#notification-count {
+    position: absolute;
+    top: 15px;
+    left: 70%;
+
+    width: 25px;
+    height: 15px;
+
+    border-radius: 7px;
+
+    background-color: tomato;
+    color: white;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.icon-add_circle {
+    font-size: 40px !important;
+}
+
+.is-active-footer {
+    color: #9164fa;
+}
