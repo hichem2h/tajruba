@@ -1,3 +1,24 @@
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}
+
 * {
     box-sizing: border-box
 }
@@ -14,13 +35,6 @@ body {
     padding-bottom: 100px;
 }
 
-a:hover {
-    cursor: pointer;
-}
-
-a:link {
-    text-decoration: none;
-}
 [class^="icon-"] {
     font-size: 18px;
 }
@@ -35,7 +49,7 @@ header {
     box-shadow: 0 1px 2px #ccc;
 }
 
-header a {
+header h1 {
     font-family: 'Dubai Bold';
     color: #1f1f33;
     font-size: 18px;
@@ -55,7 +69,7 @@ main nav {
     background-color: white;
 }
 
-main nav a {
+main nav button {
     width: 50%;
     height: 100%;
     text-align: center;
@@ -64,7 +78,7 @@ main nav a {
     font-size: 14px;
 }
 
-main nav a span {
+main nav button span {
     margin-left: 5px;
     position: relative;
     top: 3px;
@@ -90,37 +104,37 @@ main #posts article {
     box-shadow: 0 1px 2px #ccc;
 }
 
-.post-right {
+.post-text {
     width: 80%;
 }
 
-.post-right h2 {
+.post-text h2 {
     font-family: 'Dubai Bold';
     font-size: 18px;
     margin-top: 15px;
 }
 
-.post-right .author {
+.post-text .author {
     font-family: 'Dubai Bold';
     font-size: 13px;
     color: #9164fa;
     margin-top: 10px;
 }
 
-.post-right .author img {
+.post-text .author img {
     height: 25px;
     width: 25px;
     border-radius: 100%;
     margin-left: 10px;
 }
 
-.post-right .body {
+.post-text .body {
     font-size: 14px;
     margin-top: 20px;
     line-height: 18px;
 }
 
-.post-left {
+.post-buttons {
     width: 35px;
     display: flex;
     flex-direction: column;
@@ -131,7 +145,7 @@ main #posts article {
     color: #726c8066;
 }
 
-.post-left .likes-buttons {
+.post-buttons .like-buttons {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -142,7 +156,7 @@ main #posts article {
     font-size: 12px;
 }
 
-.is-active-likes {
+.is-active-like {
     color: #9164fa;
 }
 
@@ -156,10 +170,10 @@ main #posts article {
     border-radius: 15px;
 }
 
-.comments-buttons {
+.post-comment-buttons {
     width: 100%;
     height: 40px;
-    margin: 10px 0;
+    margin: 15px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -172,19 +186,19 @@ main #posts article {
     font-size: 12px;
 }
 
-.comments-buttons a {
+.post-comment-buttons button {
     direction: ltr;
     width: 100%;
     height: 100%;
 }
 
-.comments-buttons a span {
+.post-comment-buttons button span {
     margin-left: 5px;
     position: relative;
     top: 3px;
 }
 
-.comments-buttons .sep {
+.post-comment-buttons .sep {
     height: 100%;
     border-left: 1px solid #726c80aa;
 }
@@ -231,7 +245,7 @@ footer nav {
     text-align: center;
 }
 
-footer nav a {
+footer nav button {
     height: 100%;
     width: 20%;
     color: #726c8066;
@@ -258,6 +272,7 @@ footer nav a {
     color: white;
     font-size: 12px;
     line-height: 15px;
+    font-family: 'Dubai Regular';
 }
 
 .icon-add_circle {
