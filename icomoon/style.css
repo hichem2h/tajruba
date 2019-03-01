@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?aofvk8');
-  src:  url('fonts/icomoon.eot?aofvk8#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?aofvk8') format('truetype'),
-    url('fonts/icomoon.woff?aofvk8') format('woff'),
-    url('fonts/icomoon.svg?aofvk8#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?e2w0ty');
+  src:  url('fonts/icomoon.eot?e2w0ty#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?e2w0ty') format('truetype'),
+    url('fonts/icomoon.woff?e2w0ty') format('woff'),
+    url('fonts/icomoon.svg?e2w0ty#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -12,6 +12,7 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
+  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -29,6 +30,15 @@
 .icon-forward:before {
   content: "\e905";
 }
+.icon-star:before {
+  content: "\e90d";
+}
+.icon-apps:before {
+  content: "\e910";
+}
+.icon-mode_edit:before {
+  content: "\e90f";
+}
 .icon-library_books:before {
   content: "\e909";
 }
@@ -36,26 +46,29 @@
   content: "\e90a";
 }
 .icon-person:before {
-  content: "\e900";
-}
-.icon-notifications:before {
-  content: "\e901";
-}
-.icon-add_circle:before {
   content: "\e902";
 }
-.icon-home:before {
+.icon-notifications:before {
   content: "\e903";
+}
+.icon-add_circle:before {
+  content: "\e906";
+}
+.icon-home:before {
+  content: "\e904";
+}
+.icon-calendar:before {
+  content: "\e901";
+}
+.icon-map-marker:before {
+  content: "\e900";
 }
 .icon-ellipsis-h:before {
   content: "\e908";
 }
-.icon-comments-o:before {
-  content: "\e904";
-}
 .icon-frown-o:before {
-  content: "\e906";
+  content: "\e907";
 }
 .icon-smile-o:before {
-  content: "\e907";
+  content: "\e90c";
 }
